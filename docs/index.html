@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Francis I. Proctor Foundation   Study Design and Analysis Advisory Services for Faculty in the UCSF Department of Ophthalmology</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Links:</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://proctor.ucsf.edu">Web</a>
+</li>
+<li>
+  <a href="https://github.com/proctor-ucsf">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/proctorfndn">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Francis I. Proctor Foundation <br> Study Design and Analysis Advisory Services for Faculty in the UCSF Department of Ophthalmology</h1>
+
+</div>
+
+
+<p><br><br></p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Welcome to the Francis I. Proctor Foundation design and analysis advisory service page! The Proctor Foundation has a number of faculty with expertise in epidemiology and biostatistics. As a service to other faculty in the Department of Ophthalmology, Proctor Foundation faculty are available to help advise and assist with research design and statistical analysis.</p>
+<p><br></p>
+</div>
+<div id="guidelines" class="section level1">
+<h1>Guidelines</h1>
+<p>We are happy to provide advisory and consulting services to faculty in the Department of Ophthalmology. <strong>Please note that at this time we are only able to accommodate one request per attending faculty member at a time due to limited resources.</strong></p>
+<p>Most request for advisory services fall into the following categories. Please be prepared to share the following information with us before our first meeting!</p>
+<p><br></p>
+<div id="study-design-or-analysis-advice" class="section level3">
+<h3>Study Design or Analysis Advice</h3>
+<ul>
+<li>Topic Background</li>
+<li>Research question and specific hypotheses</li>
+<li>Summary of your query for advice</li>
+</ul>
+</div>
+<div id="sample-size-power-calculations" class="section level3">
+<h3>Sample Size &amp; Power Calculations</h3>
+<ul>
+<li>Topic Background</li>
+<li>Research question and specific hypotheses</li>
+<li>Planned study design (RCT, cohort, case-control, etc.)</li>
+<li>Clinically relevant effect size/estimate of means in two groups (effect size you want to be able to detect)</li>
+<li>Outcome standard deviation (for continuous outcomes)</li>
+<li>Rate or prevalence of the outcome (for binary outcomes)</li>
+</ul>
+</div>
+<div id="data-analysis" class="section level3">
+<h3>Data Analysis</h3>
+<ul>
+<li>Topic Background</li>
+<li>Research question and specific hypotheses</li>
+<li>Summary of the study design</li>
+<li>Vision that you have for results presentation (tables, figures)</li>
+<li>Overview of data source, including type of outcome (binary, categorical, continuous)</li>
+<li>Have your data properly formatted in comma separated values format (.csv). We unfortunately do not have the bandwidth to do data cleaning or extensive data processing. We will let you know if there appear to be obvious errors in the data. Elements of a properly formatted dataset:
+<ol style="list-style-type: decimal">
+<li>de-identified (no patient information!)</li>
+<li>variable names are short (3-15 characters) and have no spaces in them (use <code>x_x</code> format instead)</li>
+<li>data have no completely empty rows</li>
+<li>missing values have a clear nomenclature or delineation, e.g. <code>NA</code></li>
+<li>categorical variables (factors) have clear labels</li>
+<li>dates are in a regular format that is machine-readable</li>
+<li>no information is embedded with formatting (italics, highlight, etc.), which is possible in Excel but not possible for .csv or a modern data science work flow</li>
+<li>data has a clear structure, with a well-defined unit of observation (repeated observations are OK, so long as they are clearly identified with ID variables)</li>
+<li>if multiple datasets/tables exist, they can be clearly <a href="https://r4ds.had.co.nz/relational-data.html">joined by a key variable</a> in a 1:1 or 1:many relationship.</li>
+</ol></li>
+</ul>
+</div>
+<div id="general-guidelines-strive-for-good-scientific-statistical-practices" class="section level3">
+<h3>General guidelines: strive for good scientific &amp; statistical practices!</h3>
+<ul>
+<li>Finalize an analysis plan before the analyses are run</li>
+<li>Avoid HARKing (hypothesizing after results are known)</li>
+<li>No <em>P</em>-hacking – please don’t ask for models to be run in a different way to try to get <em>P</em>&lt;0.05 or <em>P</em>&lt;0.005</li>
+<li>Avoid multiple comparisons — minimize the number of models run</li>
+<li>The database will be closed once analysis has started. Make sure your database is final — no new patients, variables, etc. Adding or subtracting patients and re-analyzing is a form of multiple comparisons and will delay the analysis.</li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="plan-ahead-setting-expectations" class="section level1">
+<h1>Plan Ahead, Setting Expectations</h1>
+<p>Proctor faculty who provide research advisory services are as busy as you are! They are PIs of their own research groups and often have busy travel schedules. We will do our best to respond within one week of your request to set up an initial meeting.</p>
+<p>Proctor faculty travel often and may not be able to accommodate last-minute requests. Rule of thumb: if you know there is a conference coming up, schedule your consult 6 weeks prior to the submission due date. Anticipate that it could take several weeks to schedule an initial appointment, and several more weeks for an analysis to be complete.</p>
+<p>There are more than 50 faculty in the department, many of whom seek advice and help through this service. If you are a “frequent flier” then occasionally we may need to move you down in the queue if other faculty have requested advice for the first time in a 12 month period.</p>
+<p>We will always try to be transparent about how much time a project will take, and whether we need to adjust a project’s timeline.</p>
+<p>Below is a summary of the typical amount of time that different types of requests require. Every project is different, but this is based on our overall experience over many years. We strive to have at least one member of our faculty devote ~1 day per week to this work, so an advisory consult will typically have a quick turn-around (i.e., ~1 week), but a data analysis project can require multiple months to complete, depending on the queue of requests.</p>
+<table>
+<colgroup>
+<col width="44%" />
+<col width="17%" />
+<col width="37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Type of Service</th>
+<th align="left">Proctor Faculty Time Required</th>
+<th align="left">Typical time required from initial request to first round of review</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Analysis Advice</td>
+<td align="left">2-3 hours</td>
+<td align="left">1-2 weeks</td>
+</tr>
+<tr class="even">
+<td align="left">Study Design Advice</td>
+<td align="left">2-3 hours</td>
+<td align="left">1-2 weeks</td>
+</tr>
+<tr class="odd">
+<td align="left">Study Sample Size</td>
+<td align="left">2-4 hours</td>
+<td align="left">1-2 weeks</td>
+</tr>
+<tr class="even">
+<td align="left">Help with a small data analysis (e.g., one regression, one figure)</td>
+<td align="left">0.5 -1 day</td>
+<td align="left">1-3 weeks *</td>
+</tr>
+<tr class="odd">
+<td align="left">Help with a data analysis for an entire paper</td>
+<td align="left">3-5 days</td>
+<td align="left">4-8 weeks *</td>
+</tr>
+</tbody>
+</table>
+<p>Proctor faculty have extensive experience in many areas of epidemiology and biostatistics. If your question falls outside our areas of expertise, or if you need an analysis completed on a timeline that we cannot accommodate, we will do our best to point you towards the right resources. UCSF has a campus-wide biostatistics consulting service available as well: <a href="https://consult.ucsf.edu/biostatistics" class="uri">https://consult.ucsf.edu/biostatistics</a></p>
+<p><br></p>
+</div>
+<div id="make-an-appointment" class="section level1">
+<h1>Make an Appointment</h1>
+<p>If you would like to discuss your research project with us, please complete this Qualtrics form!</p>
+<p><a href="https://ucsf.co1.qualtrics.com/jfe/form/SV_9WXVQpCw4s9sq0t" class="uri">https://ucsf.co1.qualtrics.com/jfe/form/SV_9WXVQpCw4s9sq0t</a></p>
+<p>We use this to manage the queue. We will schedule an initial 30-minute meeting. Please come prepared (see <a href="#guidelines">Guidelines</a>, above).</p>
+<p>If you have not received a response within 1 week of submitting the form then please email Dr. Ben Arnold (<a href="mailto:ben.arnold@ucsf.edu" class="email">ben.arnold@ucsf.edu</a>), who is head of Proctor’s Data Coordinating Center and currently coordinates the design and analysis advisory services to the department.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

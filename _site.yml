@@ -1,0 +1,20 @@
+name: "Proctor Advisory Services"
+output_dir: "docs"
+navbar:
+  title: "Links:"
+  left:
+    - text: "Web"
+      href: https://proctor.ucsf.edu
+    - icon: fa-github fa-lg
+      href: https://github.com/proctor-ucsf
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/proctorfndn
+output:
+  html_document:
+    theme: cosmo
+    css: 'styles.css'
+    toc: yes
+    toc_depth: '3'
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
