@@ -19,7 +19,7 @@ Most requests for support fall into the following categories.  Please be prepare
 
 <br>
 
-### Study Design or Analysis Advice
+### Study Design & Analysis Advice
 
 * Topic Background
 * Research question and specific hypotheses
