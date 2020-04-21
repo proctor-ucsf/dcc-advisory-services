@@ -54,7 +54,9 @@ Most request for advisory services fall into the following categories.  Please b
 
     
 
-### General guidelines: strive for good scientific & statistical practices!
+### General guidelines
+
+**Strive for good scientific & statistical practices!**
 
 * Finalize an analysis plan before the analyses are run
 * Avoid HARKing (hypothesizing after results are known)
