@@ -28,6 +28,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -510,7 +519,7 @@ div.tocify {
 <p>If you would like to discuss your research project with us, please complete this Qualtrics form!</p>
 <p><a href="https://ucsf.co1.qualtrics.com/jfe/form/SV_9WXVQpCw4s9sq0t" class="uri">https://ucsf.co1.qualtrics.com/jfe/form/SV_9WXVQpCw4s9sq0t</a></p>
 <p>We use this to manage the queue. We will schedule an initial 30-minute meeting. Please come prepared (see <a href="#guidelines">Guidelines</a>, above).</p>
-<p>If you have not received a response within 1 week of submitting the form then please email Dr. Ben Arnold (<a href="mailto:ben.arnold@ucsf.edu" class="email">ben.arnold@ucsf.edu</a>), who is head of Proctor’s Data Coordinating Center and currently coordinates the design and analysis advisory services to the department.</p>
+<p>If you have not received a response within 1 week of submitting the form then please email Dr. Kieran O’Brien (<a href="mailto:kieran.obrien@ucsf.edu" class="email">kieran.obrien@ucsf.edu</a>), who is Proctor’s faculty member that currently coordinates the design and analysis advisory services to the department.</p>
 </div>
 
 
@@ -563,7 +572,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
